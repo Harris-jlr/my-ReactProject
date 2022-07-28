@@ -4,6 +4,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Team from './pages/Team';
+import Projects from './pages/Projects';
+import MyBlog from './pages/MyBlog';
+import TeamCalendar from './components/TeamCalendar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import BlogDetails from './components/BlogDetails';
 
@@ -22,6 +25,15 @@ function App() {
             </Route>
             <Route path="/team">
               <Team />
+            </Route>
+            <Route path="/Projects">
+              <Projects />
+            </Route>
+            <Route path="/TeamCalendar">
+              <TeamCalendar />
+            </Route>
+            <Route path="/MyBlog">
+              <MyBlog />
             </Route>
             <Route path="/blogs/:id">
               <BlogDetails />
