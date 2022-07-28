@@ -1,19 +1,5 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import { Link } from 'react-router-dom';
+
 const navigation = {
     solutions: [
       { name: 'Marketing', href: '#' },
@@ -116,24 +102,24 @@ const navigation = {
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
-                  <ul role="list" className="mt-4 space-y-2">
+                  <ul className="mt-4 space-y-2">
                     {navigation.solutions.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                        <Link to={item.href} className="text-base text-gray-300 hover:text-white">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
                   <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
-                  <ul role="list" className="mt-4 space-y-2">
+                  <ul className="mt-4 space-y-2">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                        <Link to={item.href} className="text-base text-gray-300 hover:text-white">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -143,12 +129,12 @@ const navigation = {
                 
                 <div className="mt-12 md:mt-0">
                   <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
-                  <ul role="list" className="mt-4 space-y-2">
+                  <ul className="mt-4 space-y-2">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                        <Link to={item.href} className="text-base text-gray-300 hover:text-white">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

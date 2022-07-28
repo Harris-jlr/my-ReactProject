@@ -1,11 +1,11 @@
 import './App.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Home from './Home';
-import Dashboard from './Dashboard';
-import Team from './Team';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import Team from './pages/Team';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import BlogDetails from './about';
+import BlogDetails from './components/BlogDetails';
 
 function App() {
   return (
