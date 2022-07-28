@@ -1,0 +1,34 @@
+{
+    "blogs": [
+        {
+            "title": "My First blog",
+            "body": "Why do we use it?",
+            "author": "mario",
+            "id": 1
+        },
+        {
+            "title": "My second blog",
+            "body": "Why do we use it?",
+            "author": "mario",
+            "id": 2
+        },
+        {
+            "title": "My third blog",
+            "body": "Why do we use it?",
+            "author": "mario",
+            "id": 3
+        },
+        {
+            "title": "My Fourth blog",
+            "body": "Why do we use it?",
+            "author": "mario",
+            "id": 4
+        },
+        {
+            "title": "My Fifth blog",
+            "body": "Why do we use it?",
+            "author": "mario",
+            "id": 5
+        }
+    ]
+}

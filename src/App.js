@@ -5,6 +5,7 @@ import Home from './Home';
 import Dashboard from './Dashboard';
 import Team from './Team';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BlogDetails from './about';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/team">
               <Team />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
             </Route>
           </Switch>
         </div>
