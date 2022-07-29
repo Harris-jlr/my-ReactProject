@@ -1,4 +1,4 @@
-import BlogList from "../components/BlogList";
+import BlogList1 from "../components/BlogList1";
 import useFetch from "../components/useFetch";
 
 const MyBLog = () => {
@@ -8,7 +8,7 @@ const MyBLog = () => {
     <div className="MyBLog">
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-      { blogs && <BlogList blogs={blogs} /> }
+      { blogs && <BlogList1 blogs={blogs} /> }
     </div>
   );
 }

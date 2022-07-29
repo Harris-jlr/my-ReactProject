@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Team from './pages/Team';
+import Category from './pages/Category';
 import Projects from './pages/Projects';
 import MyBlog from './pages/MyBlog';
 import TeamCalendar from './components/TeamCalendar';
@@ -17,7 +18,7 @@ function App() {
       <Navbar />
         <div className="Content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/Home">
               <Home />
             </Route>
             <Route path="/dashboard">
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/team">
               <Team />
+            </Route>
+            <Route path="/Category">
+              <Category />
             </Route>
             <Route path="/Projects">
               <Projects />
