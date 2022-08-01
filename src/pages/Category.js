@@ -206,32 +206,6 @@ const products2 = [
   },
   // More products...
 ]
-const footerNavigation = {
-  products: [
-    { name: 'Bags', href: '#' },
-    { name: 'Tees', href: '#' },
-    { name: 'Objects', href: '#' },
-    { name: 'Home Goods', href: '#' },
-    { name: 'Accessories', href: '#' },
-  ],
-  company: [
-    { name: 'Who we are', href: '#' },
-    { name: 'Sustainability', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Terms & Conditions', href: '#' },
-    { name: 'Privacy', href: '#' },
-  ],
-  customerService: [
-    { name: 'Contact', href: '#' },
-    { name: 'Shipping', href: '#' },
-    { name: 'Returns', href: '#' },
-    { name: 'Warranty', href: '#' },
-    { name: 'Secure Payments', href: '#' },
-    { name: 'FAQ', href: '#' },
-    { name: 'Find a store', href: '#' },
-  ],
-}
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -242,7 +216,7 @@ export default function Example() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 ">
       <div>
         {/* Mobile menu */}
         <Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -433,34 +407,9 @@ export default function Example() {
                   </div>
                 </form>
 
-                <div className="flex items-center space-x-6">
-                  <Link to="#" className="text-sm font-medium text-white hover:text-gray-100">
-                    Sign in
-                  </Link>
-                  <Link to="#" className="text-sm font-medium text-white hover:text-gray-100">
-                    Create an account
-                  </Link>
-                </div>
-              </div>
-            </div>
+{/************************* enter more navigation here ******************************************************************************************/}
 
-            {/* Secondary navigation */}
-            <div className="bg-white shadow-sm">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="h-16 flex items-center justify-between">
-                  {/* Logo (lg+) */}
-                  <div className="hidden lg:flex-1 lg:flex lg:items-center">
-                    <Link to="#">
-                      <span className="sr-only">Workflow</span>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                        alt=""
-                      />
-                    </Link>
-                  </div>
-
-                  <div className="hidden h-full lg:flex">
+<div className="hidden h-full lg:flex ">
                     {/* Flyout menus */}
                     <Popover.Group className="px-4 bottom-0 inset-x-0">
                       <div className="h-full flex justify-center space-x-8">
@@ -471,14 +420,14 @@ export default function Example() {
                                 <div className="relative flex">
                                   <Popover.Button
                                     className={classNames(
-                                      open ? 'text-indigo-600' : 'text-gray-700 hover:text-gray-800',
-                                      'relative flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium'
+                                      open ? 'text-yellow-100' : 'text-white hover:text-yellow-200',
+                                      'relative flex items-center transition-colors ease-out duration-200 text-sm font-medium'
                                     )}
                                   >
                                     {category.name}
                                     <span
                                       className={classNames(
-                                        open ? 'bg-indigo-600' : '',
+                                        open ? 'bg-yellow-200' : '',
                                         'absolute z-30 -bottom-px inset-x-0 h-0.5 transition ease-out duration-200'
                                       )}
                                       aria-hidden="true"
@@ -495,7 +444,7 @@ export default function Example() {
                                   leaveFrom="opacity-100"
                                   leaveTo="opacity-0"
                                 >
-                                  <Popover.Panel className="absolute z-20 top-full inset-x-0 bg-white text-sm text-gray-500">
+                                  <Popover.Panel className="absolute z-20 top-full inset-x-0 bg-white text-sm text-gray-100">
                                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                                     <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
                                     {/* Fake border when menu is open */}
@@ -523,7 +472,7 @@ export default function Example() {
                                                   className="object-center object-cover"
                                                 />
                                               </div>
-                                              <Link to={item.href} className="mt-4 block font-medium text-gray-900">
+                                              <Link to={item.href} className="mt-4 block font-medium text-white">
                                                 <span className="absolute z-10 inset-0" aria-hidden="true" />
                                                 {item.name}
                                               </Link>
@@ -546,7 +495,7 @@ export default function Example() {
                           <Link
                             key={page.name}
                             to={page.href}
-                            className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                            className="flex items-center text-sm font-medium text-white hover:text-gray-100"
                           >
                             {page.name}
                           </Link>
@@ -554,6 +503,38 @@ export default function Example() {
                       </div>
                     </Popover.Group>
                   </div>
+
+{/*****************************************  end more navigation ***********************************************************/}
+
+
+
+
+                <div className="flex items-center space-x-6">
+                  <Link to="#" className="text-sm font-medium text-white hover:text-gray-100">
+                    Sign in
+                  </Link>
+                  <Link to="#" className="text-sm font-medium text-white hover:text-gray-100">
+                    Create an account
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Secondary navigation */}
+            <div className="bg-white shadow-sm">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="h-16 flex items-center justify-between">
+                  {/* Logo (lg+) */}
+                  {/* <div className="hidden lg:flex-1 lg:flex lg:items-center">
+                    <Link to="#">
+                      <span className="sr-only">Workflow</span>
+                      <img
+                        className="h-8 w-auto"
+                        src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
+                        alt=""
+                      />
+                    </Link>
+                  </div> */}
 
                   {/* Mobile menu and search (lg-) */}
                   <div className="flex-1 flex items-center lg:hidden">
@@ -709,7 +690,7 @@ export default function Example() {
 
         <main>
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="py-24 text-center">
+            <div className="py-14 text-center">
               <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">New Arrivals</h1>
               <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
                 Thoughtfully designed objects for the workspace, home, and travel.
@@ -907,98 +888,6 @@ export default function Example() {
             </section>
           </div>
         </main>
-
-        <footer aria-labelledby="footer-heading" className="bg-white border-t border-gray-200">
-          <h2 id="footer-heading" className="sr-only">
-            Footer
-          </h2>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="py-20">
-              <div className="grid grid-cols-1 md:grid-cols-12 md:grid-flow-col md:gap-x-8 md:gap-y-16 md:auto-rows-min">
-                {/* Image section */}
-                <div className="col-span-1 md:col-span-2 lg:row-start-1 lg:col-start-1">
-                  <img
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                    alt=""
-                    className="h-8 w-auto"
-                  />
-                </div>
-
-                {/* Sitemap sections */}
-                <div className="mt-10 col-span-6 grid grid-cols-2 gap-8 sm:grid-cols-3 md:mt-0 md:row-start-1 md:col-start-3 md:col-span-8 lg:col-start-2 lg:col-span-6">
-                  <div className="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8">
-                    <div>
-                      <h3 className="text-sm font-medium text-gray-900">Products</h3>
-                      <ul className="mt-6 space-y-6">
-                        {footerNavigation.products.map((item) => (
-                          <li key={item.name} className="text-sm">
-                            <Link to={item.href} className="text-gray-500 hover:text-gray-600">
-                              {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-medium text-gray-900">Company</h3>
-                      <ul className="mt-6 space-y-6">
-                        {footerNavigation.company.map((item) => (
-                          <li key={item.name} className="text-sm">
-                            <Link to={item.href} className="text-gray-500 hover:text-gray-600">
-                              {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-medium text-gray-900">Customer Service</h3>
-                    <ul className="mt-6 space-y-6">
-                      {footerNavigation.customerService.map((item) => (
-                        <li key={item.name} className="text-sm">
-                          <Link to={item.href} className="text-gray-500 hover:text-gray-600">
-                            {item.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Newsletter section */}
-                <div className="mt-12 md:mt-0 md:row-start-2 md:col-start-3 md:col-span-8 lg:row-start-1 lg:col-start-9 lg:col-span-4">
-                  <h3 className="text-sm font-medium text-gray-900">Sign up for our newsletter</h3>
-                  <p className="mt-6 text-sm text-gray-500">The latest deals and savings, sent to your inbox weekly.</p>
-                  <form className="mt-2 flex sm:max-w-md">
-                    <label htmlFor="email-address" className="sr-only">
-                      Email address
-                    </label>
-                    <input
-                      id="email-address"
-                      type="text"
-                      autoComplete="email"
-                      required
-                      className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
-                    />
-                    <div className="ml-4 flex-shrink-0">
-                      <button
-                        type="submit"
-                        className="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                      >
-                        Sign up
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div className="border-t border-gray-100 py-10 text-center">
-              <p className="text-sm text-gray-500">&copy; 2021 Workflow, Inc. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
   )

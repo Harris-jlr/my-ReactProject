@@ -141,14 +141,7 @@ export default function Example() {
                         <dt className="text-sm font-medium text-gray-500">Phone</dt>
                         <dd className="mt-1 text-sm text-gray-900">+1 555-555-5555</dd>
                       </div>
-                      <div className="sm:col-span-2">
-                        <dt className="text-sm font-medium text-gray-500">About</dt>
-                        <dd className="mt-1 text-sm text-gray-900">
-                          Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat.
-                          Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia
-                          proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
-                        </dd>
-                      </div>
+                      
                       <div className="sm:col-span-2">
                         <dt className="text-sm font-medium text-gray-500">Attachments</dt>
                         <dd className="mt-1 text-sm text-gray-900">
@@ -238,12 +231,7 @@ export default function Example() {
                   </ul>
                 </div>
                 <div className="mt-6 flex flex-col justify-stretch">
-                  <button
-                    type="button"
-                    className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                  >
-                    Advance to offer
-                  </button>
+                  
                 </div>
               </div>
             </section>
