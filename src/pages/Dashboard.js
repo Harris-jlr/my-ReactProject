@@ -1,7 +1,6 @@
 import { Fragment } from 'react'
 import {
   CheckIcon,
-  PaperClipIcon,
   QuestionMarkCircleIcon,
   ThumbUpIcon,
   UserIcon,
@@ -14,10 +13,6 @@ const user = {
   imageUrl:
     'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
 }
-const attachments = [
-  { name: 'resume_front_end_developer.pdf', href: '#' },
-  { name: 'coverletter_front_end_developer.pdf', href: '#' },
-]
 const eventTypes = {
   applied: { icon: UserIcon, bgColorClass: 'bg-gray-400' },
   advanced: { icon: ThumbUpIcon, bgColorClass: 'bg-blue-500' },
@@ -80,13 +75,6 @@ const comments = [
     imageId: '1519244703995-f4e0f30006d5',
     body: 'Et ut autem. Voluptatem eum dolores sint necessitatibus quos. Quis eum qui dolorem accusantium voluptas voluptatem ipsum. Quo facere iusto quia accusamus veniam id explicabo et aut.',
   },
-  {
-    id: 3,
-    name: 'Dries Vincent',
-    date: '4d ago',
-    imageId: '1506794778202-cad84cf45f1d',
-    body: 'Expedita consequatur sit ea voluptas quo ipsam recusandae. Ab sint et voluptatem repudiandae voluptatem et eveniet. Nihil quas consequatur autem. Perferendis rerum et.',
-  },
 ]
 
 function classNames(...classes) {
@@ -145,7 +133,7 @@ export default function Example() {
           <div className="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
             <div className="space-y-6 lg:col-start-1 lg:col-span-2">
               {/* Description list*/}
-              <section aria-labelledby="applicant-information-title">
+              {/* <section aria-labelledby="applicant-information-title">
                 <div className="bg-white shadow sm:rounded-lg">
                   <div className="px-4 py-5 sm:px-6">
                     <h2 id="applicant-information-title" className="text-lg leading-6 font-medium text-gray-900">
@@ -213,7 +201,7 @@ export default function Example() {
                     </Link>
                   </div>
                 </div>
-              </section>
+              </section> */}
 
               {/* Comments*/}
               <section aria-labelledby="notes-title">
