@@ -2,18 +2,11 @@ import { Fragment } from 'react'
 import {
   CheckIcon,
   PaperClipIcon,
-  QuestionMarkCircleIcon,
   ThumbUpIcon,
   UserIcon,
 } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 
-const user = {
-  name: 'Whitney Francis',
-  email: 'whitney@example.com',
-  imageUrl:
-    'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
-}
 const attachments = [
   { name: 'resume_front_end_developer.pdf', href: '#' },
   { name: 'coverletter_front_end_developer.pdf', href: '#' },
@@ -63,29 +56,6 @@ const timeline = [
     target: 'Katherine Snyder',
     date: 'Oct 4',
     datetime: '2020-10-04',
-  },
-]
-const comments = [
-  {
-    id: 1,
-    name: 'Leslie Alexander',
-    date: '4d ago',
-    imageId: '1494790108377-be9c29b29330',
-    body: 'Ducimus quas delectus ad maxime totam doloribus reiciendis ex. Tempore dolorem maiores. Similique voluptatibus tempore non ut.',
-  },
-  {
-    id: 2,
-    name: 'Michael Foster',
-    date: '4d ago',
-    imageId: '1519244703995-f4e0f30006d5',
-    body: 'Et ut autem. Voluptatem eum dolores sint necessitatibus quos. Quis eum qui dolorem accusantium voluptas voluptatem ipsum. Quo facere iusto quia accusamus veniam id explicabo et aut.',
-  },
-  {
-    id: 3,
-    name: 'Dries Vincent',
-    date: '4d ago',
-    imageId: '1506794778202-cad84cf45f1d',
-    body: 'Expedita consequatur sit ea voluptas quo ipsam recusandae. Ab sint et voluptatem repudiandae voluptatem et eveniet. Nihil quas consequatur autem. Perferendis rerum et.',
   },
 ]
 
