@@ -30,22 +30,22 @@ export default function Example() {
                 </div>
                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                   {/* Current: "border-pink-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <NavLink to="/Home" activeClassName="border-pink-500 text-gray-90" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Home" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Home
                   </NavLink>
-                  <NavLink to="/Dashboard" activeClassName="border-pink-500 text-gray-90" className="border-transparent text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Dashboard" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Dashboard
                   </NavLink>
-                  <NavLink to="/Team" activeClassName="border-pink-500 text-gray-90" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Team" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Team
                   </NavLink>
-                  <NavLink to="/Projects" activeClassName="border-pink-500 text-gray-90" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Projects" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Projects
                   </NavLink>
-                  <NavLink to="/TeamCalendar" activeClassName="border-pink-500 text-gray-90" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/TeamCalendar" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Calendar
                   </NavLink>
-                  <NavLink to="/Category" activeClassName="border-pink-500 text-gray-90" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Category" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Category
                   </NavLink>
                 </div>
