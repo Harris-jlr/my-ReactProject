@@ -6,10 +6,8 @@ import Dashboard from './pages/Dashboard';
 import Team from './pages/Team';
 import Category from './pages/Category';
 import Projects from './pages/Projects';
-import MyBlog from './pages/MyBlog';
 import TeamCalendar from './components/TeamCalendar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import BlogDetails from './components/BlogDetails';
 
 function App() {
   return (
@@ -35,12 +33,6 @@ function App() {
             </Route>
             <Route path="/TeamCalendar">
               <TeamCalendar />
-            </Route>
-            <Route path="/MyBlog">
-              <MyBlog />
-            </Route>
-            <Route path="/blogs/:id">
-              <BlogDetails />
             </Route>
           </Switch>
         </div>
