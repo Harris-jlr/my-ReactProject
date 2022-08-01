@@ -10,10 +10,10 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="nav" className="sticky inset-x-0 top-0 left-0 z-index-9999999 bg-white shadow">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+          <div className="sticky inset-x-0 top-0 left-0 bg-white z-index-80 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <div className="flex justify-between h-12 py-2">
               <div className="flex px-2 lg:px-0">
                 <div className="flex-shrink-0 flex items-center">
@@ -30,22 +30,22 @@ export default function Example() {
                 </div>
                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                   {/* Current: "border-pink-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <NavLink exact to="/" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink exact to="/" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Home
                   </NavLink>
-                  <NavLink to="/Dashboard" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Dashboard" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Dashboard
                   </NavLink>
-                  <NavLink to="/Team" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Team" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Team
                   </NavLink>
-                  <NavLink to="/Projects" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Projects" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Projects
                   </NavLink>
-                  <NavLink to="/TeamCalendar" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/TeamCalendar" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Calendar
                   </NavLink>
-                  <NavLink to="/Category" activeClassName="border-pink-500 text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink to="/Category" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Category
                   </NavLink>
                 </div>
