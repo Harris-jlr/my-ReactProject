@@ -10,7 +10,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="sticky inset-x-0 top-0 left-0 z-index-9999999 bg-white shadow">
+    <Disclosure as="nav" className="sticky inset-x-0 top-0 left-0 z-50 bg-white shadow">
       {({ open }) => (
         <>
           <div className="sticky inset-x-0 top-0 left-0 bg-white z-index-80 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
