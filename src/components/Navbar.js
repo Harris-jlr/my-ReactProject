@@ -48,6 +48,9 @@ export default function Example() {
                   <NavLink to="/Category" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                     Category
                   </NavLink>
+                  <NavLink to="/Category" activeClassName="border-pink-500 text-black hover:border-pink-500 hover:text-black" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    User Questions
+                  </NavLink>
                 </div>
               </div>
               <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
@@ -130,6 +133,13 @@ export default function Example() {
                         {({ active }) => (
                           <NavLink to="/Team" className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>
                             Sign out
+                          </NavLink>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <NavLink to="/userQuestion" className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>
+                            User Questions
                           </NavLink>
                         )}
                       </Menu.Item>
