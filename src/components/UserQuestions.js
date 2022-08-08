@@ -3,14 +3,10 @@ import { Listbox, Menu, Transition } from '@headlessui/react'
 import {
   ArrowNarrowLeftIcon,
   ArrowNarrowRightIcon,
-  BriefcaseIcon,
-  CalendarIcon,
   CheckIcon,
   ChevronDownIcon,
   ChevronLeftIcon,
-  CurrencyDollarIcon,
   LinkIcon,
-  LocationMarkerIcon,
   MailIcon,
   PencilIcon,
   
@@ -97,7 +93,7 @@ export default function Example() {
        
 
         {/* Page heading */}
-        <header className="bg-gray-50 text-left py-8">
+        <header className="bg-gray-50 text-left py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:flex xl:items-center xl:justify-between">
             <div className="flex-1 min-w-0">
               <nav className="flex" aria-label="Breadcrumb">
@@ -106,7 +102,7 @@ export default function Example() {
                   <li>
                     <div className="flex items-center">
                       <ChevronLeftIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
-                      <Link to="#" className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                      <Link to="/dashboard" className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
                         Back to Discussions
                      </Link>
                     </div>
@@ -116,7 +112,7 @@ export default function Example() {
               <h1 className="mt-2 text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
                 User Questions on Lube and Castrol Oil
               </h1>
-              <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-8">
+              {/* <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-8">
                 <div className="mt-2 flex items-center text-sm text-gray-500">
                   <BriefcaseIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
                   Full-time
@@ -133,7 +129,7 @@ export default function Example() {
                   <CalendarIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
                   Closing on January 9, 2020
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="mt-5 flex xl:mt-0 xl:ml-4">
               <span className="hidden sm:block">
@@ -268,7 +264,7 @@ export default function Example() {
             <div className="px-4 sm:px-0">
               <h2 className="text-lg text-left font-medium text-gray-900">Start of Discussion</h2>
 
-              {/* Tabs */}
+              {/* Tabs  */}
               <div className="sm:hidden">
                 <label htmlFor="tabs" className="sr-only">
                   Select a tab
@@ -285,35 +281,10 @@ export default function Example() {
                   ))}
                 </select>
               </div>
+   
+              
               <div className="hidden sm:block">
-                <div className="border-b border-gray-200">
-                  <nav className="mt-2 -mb-px flex space-x-8" aria-label="Tabs">
-                    {tabs.map((tab) => (
-                      <Link
-                        key={tab.name}
-                       to={tab.href}
-                        className={classNames(
-                          tab.current
-                            ? 'border-purple-500 text-purple-600'
-                            : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200',
-                          'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm'
-                        )}
-                      >
-                        {tab.name}
-                        {tab.count ? (
-                          <span
-                            className={classNames(
-                              tab.current ? 'bg-purple-100 text-purple-600' : 'bg-gray-100 text-gray-900',
-                              'hidden ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block'
-                            )}
-                          >
-                            {tab.count}
-                          </span>
-                        ) : null}
-                     </Link>
-                    ))}
-                  </nav>
-                </div>
+               
               </div>
             </div>
 
