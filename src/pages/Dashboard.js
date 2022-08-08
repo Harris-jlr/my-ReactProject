@@ -85,7 +85,7 @@ export default function Example() {
   return (
     <>
       
-      <div className="min-h-full">
+      <div className="min-h-full text-left">
         <header className="bg-white shadow">
         </header>
 
