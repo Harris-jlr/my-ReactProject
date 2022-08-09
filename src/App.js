@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
+import Discussions from './pages/Discussions';
 import Team from './pages/Team';
 import Category from './pages/Category';
 import Projects from './pages/Projects';
@@ -21,8 +21,8 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/dashboard">
-              <Dashboard />
+            <Route path="/Discussions">
+              <Discussions />
             </Route>
             <Route path="/team">
               <Team />
