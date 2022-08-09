@@ -117,45 +117,11 @@ export default function Example() {
             </div>
 
             {/* Stacked list */}
-            <ul className="mt-5 py-2 sm:mt-0 sm:border-t-0 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-5 py-2 sm:mt-0 sm:border-t-0 sm:grid-cols-2 lg:grid-cols-3">
               {candidates.map((candidate) => (
                 <li key={candidate.Email}>
                   <Link to="#" className="group block">
-                    <div className="flex items-center border-2 rounded-lg bg-white border-gray-100 h-164 sm:py-6 sm:px-0">
-                      <div className="min-w-0 flex-1 flex items-center">
-                        <div className="min-w-0 flex-1 px-4 text-left md:grid md:grid-cols-1 md:gap-4">
-                           <div className='flex-1'>
-                                <div className='flex justify-between'>
-                                    <div class="rounded-lg inline-flex p-3 bg-gray-50 text-gray-500 ring-4 ring-white">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
-                                    </div>
-                                    <div class="rounded-lg inline-flex p-3 text-gray-500 ring-4 ring-white">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
-                                    </div>
-                                </div>
-                                <div className='flex'>
-                                    <div className='flex flex-col'>
-                                        <div className=''>
-                                            <h2 className='text-left '>
-                                                <span className="text-xl font-bold text-gray-900 ">{candidate.Title}</span>
-                                            </h2>
-                                        </div>
-                                        <div className=''>
-                                            <p className='pt-6'>
-                                                <span className="text-sm font-lite text-gray-400  truncate"><time dateTime={candidate.appliedDatetime}>{candidate.applied}</time></span>
-                                            </p>
-                                        </div>
-                                        <div className=''>
-                                            <p className="mt-2 text-sm text-gray-500">
-                                                <span className="flex-1 text-sm font-medium text-gray-500">{candidate.details}</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
+                    
                  </Link>
                 </li>
               ))}
