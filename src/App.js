@@ -7,6 +7,7 @@ import Team from './pages/Team';
 import Category from './pages/Category';
 import Projects from './pages/Projects';
 import TeamCalendar from './components/TeamCalendar';
+import Portal from './components/Portal';
 import UserQuestions from './components/UserQuestions';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/UserQuestions">
               <UserQuestions />
+            </Route>
+            <Route path="/Portal">
+              <Portal />
             </Route>
           </Switch>
         </div>
