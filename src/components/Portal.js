@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const tabs = [
-  { name: 'Applied', href: '#', count: '2', current: false },
-  { name: 'Phone Screening', href: '#', count: '4', current: false },
-  { name: 'Interview', href: '#', count: '6', current: true },
-  { name: 'Offer', href: '#', current: false },
-  { name: 'Disqualified', href: '#', current: false },
-]
+
 const candidates = [
   {
     Title: 'General User Group Announcement',
@@ -46,9 +40,9 @@ export default function Example() {
 
   return (
     <>
-      <div className="min-h-full bg-gray-50 text-left">
+      <div className="min-h-full bg-gray-100 text-left">
         {/* Page heading */}
-        <header className="bg-gray-50 text-left py-4">
+        <header className="bg-gray-100 text-left py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:flex xl:items-center xl:justify-between">
             <div className="flex-1 min-w-0">
               <h1 className="mt-2 text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
@@ -61,32 +55,14 @@ export default function Example() {
         </header>
 
         <main className="pb-16">
-          <div className="max-w-7xl mx-auto bg-gray-50 text-left py-4 sm:px-6 lg:px-8">
-            <div className="px-4 sm:px-0">
-              <h2 className="text-xl text-left font-bold text-gray-900">Announcements</h2>
-
-              {/* Tabs  */}
-              <div className="sm:hidden">
-                <label htmlFor="tabs" className="sr-only">
-                  Select a tab
-                </label>
-                {/* Use an "onChange" listener to redirect the user to the selected tab URL. */}
-                <select
-                  id="tabs"
-                  name="tabs"
-                  className="mt-4 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md"
-                  defaultValue={tabs.find((tab) => tab.current).name}
-                >
-                  {tabs.map((tab) => (
-                    <option key={tab.name}>{tab.name}</option>
-                  ))}
-                </select>
-              </div>
-   
-              
-              <div className="hidden sm:block">
-               
-              </div>
+          <div className="max-w-7xl mx-auto bg-gray-100 py-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between pt-2 px-4 sm:px-0">
+                <div class="inline-flex">
+                    <h2 className="text-xl text-left font-bold text-gray-900">Announcements</h2>
+                </div>
+                <div class="inline-flex">
+                    <p className='text-center border-2 rounded-full px-2 w-64 font-medium text-base text-gray-500 border-gray-300'>Post Announcement</p>
+                </div>
             </div>
 
             {/* Stacked list */}
