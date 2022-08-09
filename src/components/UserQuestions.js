@@ -62,16 +62,7 @@ const candidates = [
     status: 'Completed phone screening',
     Question: 'Donec sit amet diam at est sodales dignissim. Proin vulputate ex non ex auctor, et consequat neque fermentum. Phasellus vestibulum nisi massa, sed imperdiet tortor eleifend a. Praesent mattis sit amet turpis at aliquam. Fusce gravida ligula ut ultricies ullamcorper. In vitae augue non mauris luctus lobortis vel posuere magna. Ut finibus nunc non massa vestibulum fringilla. Sed nec lacinia ex, quis lobortis lacus. Fusce viverra velit scelerisque porta pulvinar.',
   },
-  {
-    name: 'Jane Cooper',
-    email: 'Jane.Cooper@example.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1498551172505-8ee7ad69f235?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    applied: '05/21/2022  11:30 AM',
-    appliedDatetime: '2020-07-01T15:34:56',
-    status: 'Completed phone screening',
-    Question: 'Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank.',
-  },
+  
   // More candidates...
 ]
 const publishingOptions = [
