@@ -7,7 +7,7 @@ export default function Example() {
           <div className="grid grid-cols-1 items-center gap-y-10 gap-x-6 lg:grid-cols-2">
             <div>
               <h2 className="text-4xl font-extrabold tracking-tight text-gray-900">
-                We built our business on great customer service
+                We built our business on great customer service for sure
               </h2>
               <p className="mt-4 text-gray-500">
                 At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
