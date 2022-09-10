@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Discussions from './pages/Discussions';
 import Team from './pages/Team';
+import MyNotifications from './pages/MyNotifications';
 import Category from './pages/MyNotifications';
 import Projects from './pages/Projects';
 import TeamCalendar from './components/TeamCalendar';
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route path="/Category">
               <Category />
+            </Route>
+            <Route path="/Category">
+              <MyNotifications />
             </Route>
             <Route path="/Projects">
               <Projects />
