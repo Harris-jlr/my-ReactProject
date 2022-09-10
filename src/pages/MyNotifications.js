@@ -3,7 +3,7 @@ import { Dialog, Menu, Popover, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
-// import SlideinPanel from '../components/slideinpanel'
+import SlideinPanel from '../components/slideinpanel'
 import NotificationTray from '../components/NotificationTray'
 
 const navigation = {
