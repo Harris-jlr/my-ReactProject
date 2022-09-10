@@ -62,7 +62,7 @@ const navigation = [
   },
 ]
 
-const navigation = [
+const badge = [
     { name: 'Team', icon: UsersIcon, href: '#', count: 3, current: false },
 ]
 
@@ -153,7 +153,7 @@ export default function Example() {
       </div>
       <div className="mt-5 flex flex-grow flex-col">
         <nav className="flex-1 space-y-1 bg-white px-2" aria-label="Sidebar">
-          {navigation.map((item) => (
+          {badge.map((item) => (
             <a
               key={item.name}
               href={item.href}
