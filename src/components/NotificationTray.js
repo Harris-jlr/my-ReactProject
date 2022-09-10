@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react'
 import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, InboxIcon, UsersIcon } from '@heroicons/react/outline'
+import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'Dashboard', icon: HomeIcon, current: true, href: '#' },
@@ -80,8 +81,8 @@ export default function Example() {
           {navigation.map((item) =>
             !item.children ? (
               <div key={item.name}>
-                <a
-                  href="#"
+                <Link
+                  to="https://react-with-tailwind-jlh.netlify.app/MyNotifications"
                   className={classNames(
                     item.current
                       ? 'bg-gray-100 text-gray-900'
