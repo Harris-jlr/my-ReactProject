@@ -31,7 +31,7 @@ function App() {
             <Route path="/Category">
               <Category />
             </Route>
-            <Route path="/Category">
+            <Route path="/MyNotifications">
               <MyNotifications />
             </Route>
             <Route path="/Projects">
