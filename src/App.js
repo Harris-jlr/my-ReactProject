@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Discussions from './pages/Discussions';
 import Team from './pages/Team';
-import Category from './pages/Category';
+import Category from './pages/MyNotifications';
 import Projects from './pages/Projects';
 import TeamCalendar from './components/TeamCalendar';
 import Portal from './components/Portal';
