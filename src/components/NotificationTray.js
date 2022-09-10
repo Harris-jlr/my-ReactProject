@@ -98,7 +98,7 @@ export default function Example() {
                     aria-hidden="true"
                   />
                   {item.name}
-                </a>
+                </Link>
               </div>
             ) : (
               <Disclosure as="div" key={item.name} className="space-y-1">
