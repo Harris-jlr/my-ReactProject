@@ -8,6 +8,7 @@ const navigation = [
   {
     name: 'Team',
     icon: UsersIcon,
+    count: 9,
     current: false,
     children: [
       { name: 'Overview', href: '#' },
@@ -19,6 +20,7 @@ const navigation = [
   {
     name: 'Projects',
     icon: FolderIcon,
+    count: 13,
     current: false,
     children: [
       { name: 'Overview', href: '#' },
@@ -30,6 +32,7 @@ const navigation = [
   {
     name: 'Calendar',
     icon: CalendarIcon,
+    count: 4,
     current: false,
     children: [
       { name: 'Overview', href: '#' },
@@ -41,6 +44,7 @@ const navigation = [
   {
     name: 'Documents',
     icon: InboxIcon,
+    count: 5,
     current: false,
     children: [
       { name: 'Overview', href: '#' },
@@ -52,6 +56,7 @@ const navigation = [
   {
     name: 'Reports',
     icon: ChartBarIcon,
+    count: 3,
     current: false,
     children: [
       { name: 'Overview', href: '#' },
@@ -121,6 +126,17 @@ export default function Example() {
                         aria-hidden="true"
                       />
                       <span className="flex-1">{item.name}</span>
+                      <span className="flex-1">{item.name}</span>
+              {item.count ? (
+                <span
+                  className={classNames(
+                    item.current ? 'bg-white' : 'bg-gray-100 group-hover:bg-gray-200',
+                    'ml-3 inline-block py-0.5 px-3 text-xs font-medium rounded-full'
+                  )}
+                >
+                  {item.count}
+                </span>
+              ) : null}
                       <svg
                         className={classNames(
                           open ? 'text-gray-400 rotate-90' : 'text-gray-300',
