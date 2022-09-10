@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Menu, Popover, Tab, Transition } from '@headlessui/react'
-import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
+import { Dialog, Menu, Popover, Tab, Transition } from '@headlessui/react'
+import { XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 
