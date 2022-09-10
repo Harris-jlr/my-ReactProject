@@ -67,10 +67,6 @@ const navigation = [
   },
 ]
 
-const badge = [
-    { name: 'Team', icon: UsersIcon, href: '#', count: 3, current: false },
-]
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
