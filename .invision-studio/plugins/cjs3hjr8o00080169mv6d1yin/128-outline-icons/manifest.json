@@ -1,0 +1,51 @@
+{
+  "author": {
+    "name": "Damian Watracz",
+    "email": "damian.watracz@gmail.com",
+    "urls": [
+      "https://watracz.com/"
+    ]
+  },
+  "bannerImage": "bannerImage.png",
+  "icon": "icon.png",
+  "displayName": "128 Outline Icons",
+  "assets": [
+    {
+      "name": "128 Outline Icons",
+      "path": "128 Outline Icons.studio",
+      "type": "asset-kit"
+    }
+  ],
+  "description": "Basic UX — 128 Outline Icons. A library of 16x16 px icons ready to use on your UX / UI projects.",
+  "tagline": "Library of 16x16px icons ready to use on your UX/UI projects",
+  "homepage": "https://watracz.com/",
+  "manifestVersion": "0.1.0",
+  "name": "128-outline-icons",
+  "version": "0.1.3",
+  "contributors": [
+    {
+      "name": "Damian Watracz",
+      "email": "damian.watracz@gmail.com"
+    }
+  ],
+  "screenshots": [
+    "screenshot-0.png",
+    "screenshot-1.png"
+  ],
+  "_appstore": {
+    "installStrategy": "ASSET",
+    "team": {
+      "id": "cjs3hjr8o00080169mv6d1yin",
+      "name": "Studio Labs",
+      "logo": "",
+      "subdomain": "studiolabs",
+      "permissions": {
+        "allowPublicLinkAccess": true,
+        "defaultLinkAccess": "Anyone",
+        "allowTeamInvitesByMembers": true,
+        "allowPrototypeShareLinksWithoutPassword": true
+      }
+    }
+  },
+  "teamId": "cjs3hjr8o00080169mv6d1yin"
+}

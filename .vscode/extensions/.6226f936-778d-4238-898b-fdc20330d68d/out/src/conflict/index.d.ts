@@ -1,0 +1,10 @@
+import { Disposable, ExtensionContext } from 'vscode';
+import { ConflictDetector } from './conflictDetectionService';
+import { ConflictView } from './conflictView';
+export { ConflictDetectionConfig, ConflictDetector, diffFolder, diffOneFile } from './conflictDetectionService';
+export { CommonDirDirectoryDiffer, DirectoryDiffer, DirectoryDiffResults } from './directoryDiffer';
+export { MetadataCacheCallback, MetadataCacheExecutor, MetadataCacheResult, MetadataCacheService, MetadataContext } from './metadataCacheService';
+export declare const conflictView: ConflictView;
+export declare const conflictDetector: ConflictDetector;
+export declare function setupConflictView(extensionContext: ExtensionContext): Promise<void>;
+export declare function registerConflictView(): Disposable;

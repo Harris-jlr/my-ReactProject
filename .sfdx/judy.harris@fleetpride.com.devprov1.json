@@ -1,0 +1,10 @@
+{
+    "username": "judy.harris@fleetpride.com.devprov1",
+    "accessToken": "648aaf86233baa369aa2899beb27e31f579afc2d965330e79e28db81091a67d0720375cbe255473ceb65eef23666b0f60438bec798327cea163298cbc5de966a1b4f1062ec663cd2130a73e669f2674b42351de1317ebb23fc3fab09e516443f3b1502f1ddb5941bcc981e5b0f45917b4ea10428b36d:d09a4fb031f3ca2bba79a0e01e7ffd62",
+    "instanceUrl": "https://fleetpride--devprov1.my.salesforce.com",
+    "orgId": "00D7d000008yavhEAA",
+    "loginUrl": "https://fleetpride--devprov1.my.salesforce.com/",
+    "refreshToken": "c5e99c3472ef5d9c3b9757d9dc2b3c731b4c87641221469e5b0b1bef50b89f335d4ee68c6d4279ad4c95b205da13fb961f2c4903d1856571811bc2b9b4af6d3e57955ebb3d0777eaf65035e4fdedc8dedc7974180f3375e092cc359a9b:18c67498dac0d51dbf7173e7081c361d",
+    "clientId": "PlatformCLI",
+    "isDevHub": false
+}

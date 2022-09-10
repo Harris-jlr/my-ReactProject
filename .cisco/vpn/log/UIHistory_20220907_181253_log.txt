@@ -1,0 +1,206 @@
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="9/7/2022 6:14:54 PM" state="Error">
+	<label id="simple_status" value="The VPN Service is not available.  Exiting."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="true"/>
+	<combobox id="simple_headend_combobox" disabled="true"/>
+	<log messagehistory="The VPN Service is not available.  Exiting."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="9/7/2022 6:14:54 PM" id="exit_conf_popup" type="custom">
+		<title value="Cisco AnyConnect"/>
+		<layout>
+			<row>
+				<label id="exit_conf_label" value="The VPN Service is not available.  Exiting."/>
+			</row>
+			<row>
+				<button id="exit_conf_btn" label="OK" OnPress="exit_conf_btn_OnPress" OnClose="exit_conf_btn_OnClose"/>
+			</row>
+		</layout>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="setup" timestamp="9/7/2022 6:14:54 PM">
+	<button id="simple_action_btn" OnPress="simple_action_btn_OnPress" OnPressID="simple_headend_combobox"/>
+	<menuitem id="vpn_connect_toggle_menu_item" OnPress="vpn_connect_toggle_menu_item_OnPress" OnPressID="simple_headend_combobox"/>
+	<combobox id="simple_headend_combobox" OnSelect="simple_headend_combobox_OnSelect" OnSelectID="simple_headend_combobox"/>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<label id="simple_substatus_full" value=""/>
+	<label id="simple_tile_label" value="VPN:"/>
+	<preferences/>
+	<outlinelistbox id="stat_outlinelistbox" updaterows="false" num_columns="2">
+		<listgroup id="group_connection_info">
+			<listrowcolumn label="Connection Information"/>
+			<listrow id="id_stat_state">
+				<listrowcolumn label="State:"/>
+				<listrowcolumn label="Disconnected"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Tunnel Mode (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Tunnel Mode (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Duration:"/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_addr_info">
+			<listrowcolumn label="Address Information"/>
+			<listrow id="id_client_addr_ipv4">
+				<listrowcolumn label="Client (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_client_addr_ipv6">
+				<listrowcolumn label="Client (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_bytes">
+			<listrowcolumn label="Bytes"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_frames">
+			<listrowcolumn label="Frames"/>
+			<listrow id="id_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_ctrl_frames">
+			<listrowcolumn label="Control Frames"/>
+			<listrow id="id_ctrl_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_ctrl_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_client_mgmt">
+			<listrowcolumn label="Client Management"/>
+			<listrow id="id_admin_domain">
+				<listrowcolumn label="Administrative Domain:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_profile_name">
+				<listrowcolumn label="Profile Name:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_transport_info">
+			<listrowcolumn label="Transport Information"/>
+			<listrow id="id_protocol">
+				<listrowcolumn label="Protocol:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_cipher">
+				<listrowcolumn label="Cipher:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_compression">
+				<listrowcolumn label="Compression:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_proxy_addr">
+				<listrowcolumn label="Proxy Address:"/>
+				<listrowcolumn label="No Proxy"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_feature_config">
+			<listrowcolumn label="Feature Configuration"/>
+			<listrow id="id_fips_mode">
+				<listrowcolumn label="FIPS Mode:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tnd_mode">
+				<listrowcolumn label="Trusted Network Detection:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_always_on_mode">
+				<listrowcolumn label="Always On:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_sms">
+			<listrowcolumn label="Secure Mobility Solution"/>
+			<listrow id="id_secure_mobility_soln_status">
+				<listrowcolumn label="Status:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_secure_mobility_soln_appl">
+				<listrowcolumn label="Appliance:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+	<button id="stat_reset_btn" label="Reset" disabled="true" OnPress="stat_reset_btn_OnPress"/>
+	<button id="stat_export_btn" label="Export Stats..." OnPress="stat_export_btn_OnPress"/>
+	<outlinelistbox id="routes_outlinelistbox" updaterows="false" num_columns="1"/>
+	<outlinelistbox id="firewall_outlinelistbox" updaterows="false" num_columns="6">
+		<listhead>
+			<listheader label="Interface"/>
+			<listheader label="Permission"/>
+			<listheader label="Protocol"/>
+			<listheader label="Src Port"/>
+			<listheader label="Dst Port"/>
+			<listheader label="Destination Address"/>
+		</listhead>
+	</outlinelistbox>
+	<outlinelistbox id="overview_stat_outlinelistbox" updaterows="true" num_columns="2">
+		<listgroup id="group_vpn">
+			<listrowcolumn label="VPN (Disconnected)"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Bytes Sent: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Bytes Received: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Time Connected: "/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Client Address (IPv4): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Client Address (IPv6): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server Address: "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="9/7/2022 6:33:09 PM" id="exit_conf_popup" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="quit" timestamp="9/7/2022 6:33:09 PM"/>
+

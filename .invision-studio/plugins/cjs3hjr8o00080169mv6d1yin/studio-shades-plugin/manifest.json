@@ -1,0 +1,37 @@
+{
+  "name": "studio-shades-plugin",
+  "displayName": "Shades",
+  "tagline": "Generate endless color shades.",
+  "description": "Generate endless color shades.",
+  "license": "MIT",
+  "version": "0.4.0",
+  "manifestVersion": "0.2.0",
+  "entry": "index.js",
+  "author": {
+    "name": "InVision",
+    "email": "studio-labs@invisionapp.com"
+  },
+  "dockIcon": "assets/shades-dock-icon.svg",
+  "icon": "assets/store-icon.png",
+  "bannerImage": "assets/shades-banner.png",
+  "homepage": "https://www.invisionapp.com/",
+  "privacyPolicy": "https://invisionapp.com/privacy-policy",
+  "termsOfService": "https://invisionapp.com/terms",
+  "bugs": "https://support.invisionapp.com",
+  "_appstore": {
+    "installStrategy": "APP",
+    "team": {
+      "id": "cjs3hjr8o00080169mv6d1yin",
+      "name": "Studio Labs",
+      "logo": "",
+      "subdomain": "studiolabs",
+      "permissions": {
+        "allowPublicLinkAccess": true,
+        "defaultLinkAccess": "Anyone",
+        "allowTeamInvitesByMembers": true,
+        "allowPrototypeShareLinksWithoutPassword": true
+      }
+    }
+  },
+  "teamId": "cjs3hjr8o00080169mv6d1yin"
+}

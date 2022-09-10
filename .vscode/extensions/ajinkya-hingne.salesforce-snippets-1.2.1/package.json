@@ -1,0 +1,53 @@
+{
+	"name": "salesforce-snippets",
+	"displayName": "Salesforce Snippets",
+	"description": "Useful Salesforce snippets to speed up writing code for Salesforce platform",
+	"version": "1.2.1",
+	"publisher": "ajinkya-hingne",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"snippets",
+		"salesforce",
+		"apex",
+		"lwc",
+		"lightning components"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "apex",
+				"path": "./snippets/apex-snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html-snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript-snippets.json"
+			}
+		]
+	},
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#323232",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/meajinkya/salesforce-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/meajinkya/salesforce-snippets.git"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"__metadata": {
+		"id": "f7265a62-ac92-4672-be6b-c2e279a8f029",
+		"publisherId": "c82ba047-6562-441e-b666-cc5e190ffa53",
+		"publisherDisplayName": "Ajinkya Hingne"
+	}
+}
