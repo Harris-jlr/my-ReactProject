@@ -32,8 +32,8 @@ export default function Example() {
   return (
     <div className="bg-gray-50 ">
       <div>
-        {/* <SlideinPanel /> */}
-        <NotificationTray />
+        <SlideinPanel />
+     
         {/* Mobile menu */}
         <Transition.Root show={mobileMenuOpen} as={Fragment}>
           <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileMenuOpen}>
@@ -142,9 +142,9 @@ export default function Example() {
         <main>
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-14 text-center">
-              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">New Arrivals</h1>
+              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">My Notifications Page</h1>
               <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
-                Thoughtfully designed objects for the workspace, home, and travel.
+                Stay current with what is happening by subscribing to what is important to you.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ export default function Example() {
                 </button>
 
                 <Popover.Group className="hidden sm:flex sm:items-baseline sm:space-x-8">
-                 test popovergroup
+                <NotificationTray />
                 </Popover.Group>
               </div>
             </section>

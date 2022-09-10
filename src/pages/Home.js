@@ -10,9 +10,7 @@ export default function Example() {
                 We built our business on great customer service for sure
               </h2>
               <p className="mt-4 text-gray-500">
-                At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                caring about that. Our new strategy is to write a bunch of things that look really good in the
-                headlines, then clarify in the small print but hope people don't actually read it.
+                We are so excited to see you here and we hope we have created the ulitmate experience for you.  If you have any questions please reach out. Enjoy.
               </p>
             </div>
             <div className="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
