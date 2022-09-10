@@ -125,8 +125,7 @@ export default function Example() {
                         className="mr-3 h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                         aria-hidden="true"
                       />
-                      <span className="flex-1">{item.name}</span>
-                      <span className="flex-1">{item.name}</span>
+                    <span className="flex-1">{item.name}</span>
               {item.count ? (
                 <span
                   className={classNames(
@@ -167,39 +166,7 @@ export default function Example() {
           )}
         </nav>
       </div>
-      <div className="mt-5 flex flex-grow flex-col">
-        <nav className="flex-1 space-y-1 bg-white px-2" aria-label="Sidebar">
-          {badge.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className={classNames(
-                item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
-                'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
-              )}
-            >
-              <item.icon
-                className={classNames(
-                  item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
-                  'mr-3 flex-shrink-0 h-6 w-6'
-                )}
-                aria-hidden="true"
-              />
-              <span className="flex-1">{item.name}</span>
-              {item.count ? (
-                <span
-                  className={classNames(
-                    item.current ? 'bg-white' : 'bg-gray-100 group-hover:bg-gray-200',
-                    'ml-3 inline-block py-0.5 px-3 text-xs font-medium rounded-full'
-                  )}
-                >
-                  {item.count}
-                </span>
-              ) : null}
-            </a>
-          ))}
-        </nav>
-      </div>
+      
     </div>
   )
 }
