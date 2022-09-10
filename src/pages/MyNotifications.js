@@ -3,7 +3,7 @@ import { Dialog, Menu, Popover, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
-
+import SlideinPanel from '../components/slideinpanel'
 
 const navigation = {
   pages: [
@@ -12,7 +12,7 @@ const navigation = {
   ],
 }
 const sortOptions = [
-  { name: 'Most Popular', href: '#' },
+  { name: 'my Most Popular', href: '#' },
   { name: 'Best Rating', href: '#' },
   { name: 'Newest', href: '#' },
   { name: 'Price: Low to High', href: '#' },
@@ -31,7 +31,7 @@ export default function Example() {
   return (
     <div className="bg-gray-50 ">
       <div>
-        <div>testing page my notifications</div>
+        <SlideinPanel />
         {/* Mobile menu */}
         <Transition.Root show={mobileMenuOpen} as={Fragment}>
           <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileMenuOpen}>
