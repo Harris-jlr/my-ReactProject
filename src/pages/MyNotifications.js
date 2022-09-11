@@ -164,6 +164,14 @@ export default function Example() {
                         aria-hidden="true"
                       />
                     </Menu.Button>
+                    <button
+                      type="button"
+                      className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
+                      onClick={() => setMobileMenuOpen(true)}
+                    >
+                      <p>( 34 )</p>
+                      
+                    </button>
                   </div>
 
                   <Transition
