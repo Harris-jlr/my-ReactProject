@@ -4,7 +4,7 @@ import { XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 import SlideinPanel from '../components/slideinpanel'
-import NotificationTray from '../components/NotificationTray'
+
 
 const navigation = {
   pages: [
@@ -204,9 +204,7 @@ export default function Example() {
                   Filters
                 </button>
 
-                <Popover.Group className="hidden sm:flex sm:items-baseline sm:space-x-8">
-                <NotificationTray />
-                </Popover.Group>
+               
               </div>
             </section>
 

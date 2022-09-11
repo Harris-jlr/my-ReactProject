@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import NotificationTray from '../components/NotificationTray'
 
 export default function Example() {
   const [open, setOpen] = useState(true)
@@ -53,7 +54,7 @@ export default function Example() {
                     <div className="relative mt-6 flex-1 px-4 sm:px-6">
                       {/* Replace with your content */}
                       <div>
-                        <h1>contents go here</h1>
+                      <NotificationTray />
 
                       </div>
                        {/* Replace with your content */}
