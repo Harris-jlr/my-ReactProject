@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react'
-import { Dialog, Menu, Popover, Transition } from '@headlessui/react'
+import { Dialog, Menu, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
