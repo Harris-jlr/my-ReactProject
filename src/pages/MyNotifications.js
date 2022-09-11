@@ -170,8 +170,7 @@ export default function Example() {
                       onClick={() => setMobileMenuOpen(true)}
                     >
                       <span
-                  className={classNames(
-                    item.current ? 'bg-white' : 'bg-gray-100 group-hover:bg-gray-200',
+                  className={classNames('bg-gray-100 group-hover:bg-gray-200',
                     'ml-3 inline-block py-0.5 px-4 text-xs font-medium rounded-full'
                   )}
                 >
