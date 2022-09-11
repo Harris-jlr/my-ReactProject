@@ -169,7 +169,15 @@ export default function Example() {
                       className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
                       onClick={() => setMobileMenuOpen(true)}
                     >
-                      <p>( 34 )</p>
+                      <span
+                  className={classNames(
+                    item.current ? 'bg-white' : 'bg-gray-100 group-hover:bg-gray-200',
+                    'ml-3 inline-block py-0.5 px-4 text-xs font-medium rounded-full'
+                  )}
+                >
+                  {/* {item.count} */}
+                  32
+                </span>
                       
                     </button>
                   </div>
