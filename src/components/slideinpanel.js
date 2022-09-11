@@ -56,6 +56,7 @@ export default function Example() {
                       <div className="absolute px-4 sm:px-6 inset-y-0 right-0 z-500 h-full rounded-lg shadow-lg min-w-300"> 
                         <NotificationTray />
                       {/* /End replace */}
+                      </div>
                     </div>
                   </div>
                 </Dialog.Panel>
