@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import NotificationTray from '../components/NotificationTray'
+import NotificationTray from './NotificationTray'
 
 export default function Example() {
   const [open, setOpen] = useState(true)
