@@ -33,7 +33,7 @@ export default function Example() {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                  <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 px-8 shadow-xl">
+                  <div className="flex h-full flex-col overflow-y-scroll bg-white py-12 px-2 shadow-xl">
                     <NotificationTray />
                     {/* <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-between">
