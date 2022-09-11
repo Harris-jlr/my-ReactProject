@@ -53,7 +53,7 @@ export default function Example() {
                     </div>
                     <div className="relative mt-6 flex-1 px-4 sm:px-6">
                        {/* Replace with your content */}
-                      <div className="absolute px-4 sm:px-6 inset-y-0 right-0 z-500 h-full rounded-lg shadow-lg min-w-300"> 
+                      <div className="absolute px-4 sm:px-6 inset-y-0 right-0"> 
                         <NotificationTray />
                       {/* /End replace */}
                       </div>
