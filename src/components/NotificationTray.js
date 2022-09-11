@@ -73,7 +73,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4 absolute inset-y-0 right-0 z-50 h-full rounded-lg shadow-lg min-w-1/3">
+    <div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4 ">
       <div className="flex flex-shrink-0 items-center px-4">
         <img
           className="h-8 w-auto"
