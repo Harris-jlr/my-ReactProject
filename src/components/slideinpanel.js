@@ -52,13 +52,7 @@ export default function Example() {
                         </div>
                       </div>
                     </div> */}
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                       {/* Replace with your content */}
-                      <div className="absolute px-4 sm:px-6 inset-y-0 right-0"> 
-                        
-                      {/* /End replace */}
-                      </div>
-                    </div>
+                    
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
